@@ -1,11 +1,9 @@
 #include<stdio.h>
-// perimeter of rectangle
-int  main(){
-    float a,b;
-    printf("side a : ");
-    scanf("%f", &a);
-    printf("side b : ");
-    scanf("%f", &b);
-    printf("perimeter of the rectangle : %f", 2*(a+b));
+int main(){
+    if(printf("hello world")){}    
     return 0; 
+    // switch(printf("hello world")){}    
+    // return 0;
+    // while(!printf("hello world")){}    
+    // return 0;  
 }

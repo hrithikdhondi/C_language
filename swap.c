@@ -1,15 +1,15 @@
 #include<stdio.h>
-// swaping two numbers
-void swap(int* a, int* b);
+// Swaping two numbers without third variable.
 int main(){
-    int x = 2, y = 3;
-    swap(&x,&y);
-    printf("x = %d & y = %d",x,y);
-}
-void swap(int* a,int* b){
-    int* t;
-    *t = *b;
-    *b = *a;
-    *a = *t;
-    printf("a = %d & b = %d\n",*a,*b);
+    int a,b;
+    printf("Enter the number a: ");
+    scanf("%d",&a);
+    printf("Enter the number b: ");
+    scanf("%d",&b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("a : %d\n",a);
+    printf("b : %d",b);
+    return 0;
 }
